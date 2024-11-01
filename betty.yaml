@@ -15,7 +15,7 @@ entity_types:
     generate_html_list: true
   file:
     generate_html_list: true
-event_types:
+event-types:
   moon-landing:
     label: Moon Landing
 extensions:
