@@ -16,15 +16,15 @@ entity_types:
   File:
     generate_html_list: true
 extensions:
-  betty.extension.Trees: {}
-  betty.extension.CottonCandy: {}
-  betty.extension.Deriver: {}
+#  betty.extension.Trees: {}
+#  betty.extension.CottonCandy: {}
+#  betty.extension.Deriver: {}
   betty.extension.Gramps:
     configuration:
       family_trees:
         - file: ./tree.gpkg
-  betty.extension.Maps: {}
-  betty.extension.Privatizer: {}
-  betty.extension.Wikipedia:
-    configuration:
-      populate_images: true
+#  betty.extension.Maps: {}
+#  betty.extension.Privatizer: {}
+#  betty.extension.Wikipedia:
+#    configuration:
+#      populate_images: true
