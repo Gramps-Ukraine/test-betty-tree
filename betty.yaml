@@ -3,7 +3,7 @@ debug: true
 clean_urls: true
 title: Betty's ancestry
 name: betty-ancestry
-author: Bart Feenstra
+author: Illia Maier
 #logo: my-ancestry-logo.png
 lifetime_threshold: 125
 locales:
@@ -14,16 +14,10 @@ entity_types:
   person:
     generate_html_list: true
   file:
-    generate_html_list: false
+    generate_html_list: true
 event_types:
   moon-landing:
     label: Moon Landing
-place_types:
-  moon:
-    label: Moon
-presence_roles:
-  astronaut:
-    label: Astronaut
 extensions:
   trees: {}
 #  betty.extension.CottonCandy: {}
