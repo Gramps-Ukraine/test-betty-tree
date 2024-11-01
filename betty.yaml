@@ -1,15 +1,16 @@
 url: https://illia-m.github.io/test-betty-tree
-debug: true
+debug: false
 clean_urls: true
-title: Betty's ancestry
-name: betty-ancestry
+title: Прикла родинного сайту
+name: some-example-name
 author: Illia Maier
 #logo: my-ancestry-logo.png
 lifetime_threshold: 125
 locales:
   - locale: en-US
     alias: en
-  - locale: uk
+  - locale: uk-UA
+    alias: uk
 entity_types:
   person:
     generate_html_list: true
@@ -17,14 +18,19 @@ entity_types:
     generate_html_list: true
 extensions:
   trees: {}
-#  betty.extension.CottonCandy: {}
-#  betty.extension.Deriver: {}
+  cotton-candy:
+    configuration:
+      primary_inactive_color: '#ffc0cb'
+      primary_active_color: '#ff69b4'
+      link_inactive_color: '#149988'
+      link_active_color: '#2a615a'
+  deriver: {}
   gramps:
     configuration:
       family_trees:
         - file: ./tree.gpkg
   maps: {}
-#  betty.extension.Privatizer: {}
+  privatizer: {}
   wikipedia:
     configuration:
       populate_images: false
