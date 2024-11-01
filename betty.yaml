@@ -15,9 +15,6 @@ entity_types:
     generate_html_list: true
   file:
     generate_html_list: true
-event-types:
-  moon-landing:
-    label: Moon Landing
 extensions:
   trees: {}
 #  betty.extension.CottonCandy: {}
