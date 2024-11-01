@@ -1,0 +1,30 @@
+base_url: https://ancestry.example.com
+debug: true
+root_path: /betty
+clean_urls: true
+title: Betty's ancestry
+name: betty-ancestry
+author: Bart Feenstra
+lifetime_threshold: 125
+locales:
+  en-US:
+    alias: en
+  uk-UA: {}
+entity_types:
+  Person:
+    generate_html_list: true
+  File:
+    generate_html_list: true
+extensions:
+  betty.extension.Trees: {}
+  betty.extension.CottonCandy: {}
+  betty.extension.Deriver: {}
+  betty.extension.Gramps:
+    configuration:
+      family_trees:
+        - file: ./tree.gpkg
+  betty.extension.Maps: {}
+  betty.extension.Privatizer: {}
+  betty.extension.Wikipedia:
+    configuration:
+      populate_images: true
