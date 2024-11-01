@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's different
+      - main
   pull_request:
     branches:
       - main
@@ -29,13 +29,15 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'  # Installs the latest LTS version of Node.js
+          node-version: '20'  # Ensures compatibility with the "node >= 20" requirement
+
+      - name: Install npm dependencies
+        run: |
+          npm install betty.project.extension.trees betty.project.extension.maps betty.extension.cotton-candy
+          npm install  # Also installs other dependencies from package.json if needed
 
       - name: Install betty
-        run: |
-          pip install betty
-          echo "Checking npm path and version"
-          npm --version  # Ensures npm is accessible
+        run: pip install betty
 
       - name: Build site with betty
         run: betty -c betty.yaml generate
