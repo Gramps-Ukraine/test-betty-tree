@@ -1,20 +1,29 @@
-base_url: https://ancestry.example.com
+url: https://ancestry.example.com/betty
 debug: true
-root_path: /betty
 clean_urls: true
 title: Betty's ancestry
 name: betty-ancestry
 author: Bart Feenstra
+#logo: my-ancestry-logo.png
 lifetime_threshold: 125
 locales:
-  en-US:
+  - locale: en-US
     alias: en
-  uk-UA: {}
+  - locale: uk
 entity_types:
-  Person:
+  person:
     generate_html_list: true
-  File:
-    generate_html_list: true
+  file:
+    generate_html_list: false
+event_types:
+  moon-landing:
+    label: Moon Landing
+place_types:
+  moon:
+    label: Moon
+presence_roles:
+  astronaut:
+    label: Astronaut
 extensions:
 #  betty.extension.Trees: {}
 #  betty.extension.CottonCandy: {}
