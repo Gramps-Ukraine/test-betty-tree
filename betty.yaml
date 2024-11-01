@@ -25,15 +25,24 @@ presence_roles:
   astronaut:
     label: Astronaut
 extensions:
-#  betty.extension.Trees: {}
+  trees: {}
 #  betty.extension.CottonCandy: {}
 #  betty.extension.Deriver: {}
-  betty.extension.Gramps:
+  gramps:
     configuration:
       family_trees:
         - file: ./tree.gpkg
-#  betty.extension.Maps: {}
+          event-types:
+            GrampsEventType: betty-event-type
+            AnotherGrampsEventType: another-betty-event-type
+          event-types:
+            GrampsPlaceType: betty-place-type
+            AnotherGrampsPlaceType: another-betty-place-type
+          presence-roles:
+            GrampsRole: betty-presence-role
+            AnotherGrampsRole: another-betty-presence-role
+  maps: {}
 #  betty.extension.Privatizer: {}
-#  betty.extension.Wikipedia:
-#    configuration:
-#      populate_images: true
+  wikipedia:
+    configuration:
+      populate_images: false
