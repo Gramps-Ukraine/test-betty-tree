@@ -26,15 +26,6 @@ extensions:
     configuration:
       family_trees:
         - file: ./tree.gpkg
-          event-types:
-            GrampsEventType: betty-event-type
-            AnotherGrampsEventType: another-betty-event-type
-          event-types:
-            GrampsPlaceType: betty-place-type
-            AnotherGrampsPlaceType: another-betty-place-type
-          presence-roles:
-            GrampsRole: betty-presence-role
-            AnotherGrampsRole: another-betty-presence-role
   maps: {}
 #  betty.extension.Privatizer: {}
   wikipedia:
