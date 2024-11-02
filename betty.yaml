@@ -9,7 +9,7 @@ lifetime_threshold: 125
 locales:
   - locale: en-US
     alias: en
-  - locale: uk-UA
+  - locale: uk
     alias: uk
 entity_types:
   person:
