@@ -18,6 +18,18 @@ entity_types:
     generate_html_list: true
   source:
     generate_html_list: true
+  enclosure:
+    generate_html_list: true
+  event:
+    generate_html_list: true
+  citation:
+    generate_html_list: true
+  note:
+    generate_html_list: true
+  person-name:
+    generate_html_list: true
+  presence:
+    generate_html_list: true
   place:
     generate_html_list: true
   file:
@@ -26,10 +38,10 @@ extensions:
   trees: {}
   cotton-candy:
     configuration:
-      primary_inactive_color: '#ffc0cb'
-      primary_active_color: '#ff69b4'
-      link_inactive_color: '#149988'
-      link_active_color: '#2a615a'
+      primary_inactive_color: "#ffc0cb"
+      primary_active_color: "#ff69b4"
+      link_inactive_color: "#149988"
+      link_active_color: "#2a615a"
   deriver: {}
   gramps:
     configuration:
