@@ -14,8 +14,6 @@ locales:
 entity_types:
   person:
     generate_html_list: true
-  family:
-    generate_html_list: true
   source:
     generate_html_list: true
   enclosure:
