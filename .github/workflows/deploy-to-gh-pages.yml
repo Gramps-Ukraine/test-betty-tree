@@ -32,7 +32,7 @@ jobs:
           node-version: '20'  # Ensures compatibility with the "node >= 20" requirement
 
       - name: Install betty
-        run: pip install git+https://github.com/bartfeenstra/betty.git@allow-unsupported-locales
+        run: pip install git+https://github.com/bartfeenstra/betty.git@0.4.x
       #        run: pip install betty==0.4.0b1
 
       - name: Build site with betty
