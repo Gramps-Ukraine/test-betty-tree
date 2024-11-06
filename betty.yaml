@@ -1,9 +1,9 @@
 url: https://illia-m.github.io/test-betty-tree
 debug: false
 clean_urls: true
-title: Прикла родинного сайту
-name: some-example-name
-author: Illia Maier
+title: Родовід Рюриковичів
+name: some-example-site-name
+author: Illia M
 #logo: my-ancestry-logo.png
 lifetime_threshold: 125
 locales:
