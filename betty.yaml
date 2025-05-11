@@ -26,14 +26,8 @@ entity_types:
     generate_html_list: true
   citation:
     generate_html_list: true
-extensions:
+extensions:       #"demo", "deriver", "gramps", "http-api-doc", "maps", "privatizer", "raspberry-mint", "trees", "webpack", "wiki"
   trees: {}
-  cotton-candy:
-    configuration:
-      primary_inactive_color: "#ffc0cb"
-      primary_active_color: "#ff69b4"
-      link_inactive_color: "#149988"
-      link_active_color: "#2a615a"
   deriver: {}
   gramps:
     configuration:
@@ -41,6 +35,6 @@ extensions:
         - file: ./tree.gpkg
   maps: {}
   privatizer: {}
-  wikipedia:
+  wiki:
     configuration:
-      populate_images: false
+      populate_images: true
